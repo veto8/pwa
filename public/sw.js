@@ -8,9 +8,9 @@ const assets = [
   "./js/app.js",
   "./css/pico.css",
   "./css/app.css",
-  "./img/spelltrainer_icon.png",
-  "./img/spelltrainer_landing.png",
-  "./img/spelltrainer_logo.png",
+  "./img/icon.png",
+  "./img/landing.png",
+  "./img/logo.png",
   "./img/screenshot.png",
 ];
 
