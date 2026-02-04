@@ -1,10 +1,28 @@
 #logger {
-    width: 100%;
+    min-width: 350px;
     background-color: #111;
     border:none;
     color: #eee;
-    height: 100px;
+    min-height: 700px;
+    font-size: 0.8em;
 }
+
+/*
+Container Flex Body
+*/
+.container_flex {
+  margin-top: 10px;  
+  display: flex;
+  flex-direction: row;
+}
+.container_flex .column {
+  flex: 0 1 auto;  
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #eee; 
+/*  background-color: #fff;  */
+}
+
 
 /*
  Navigation via Pico and without JavaScript

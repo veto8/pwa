@@ -4,13 +4,14 @@ const assets = [
   "./",
   "./index.html",
   "./favicon.png",
+  "./js/log2textarea.js",
   "./js/app.js",
+  "./css/pico.css",
   "./css/app.css",
   "./img/spelltrainer_icon.png",
   "./img/spelltrainer_landing.png",
   "./img/spelltrainer_logo.png",
   "./img/screenshot.png",
-  "./node_modules/log2textarea/dist/log2textarea.js",
 ];
 
 self.addEventListener("install", (installEvent) => {
