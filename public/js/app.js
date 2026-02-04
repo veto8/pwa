@@ -4,7 +4,7 @@ let install_button = document.querySelector(".install_app");
 
 window.onload = async function () {
   var registration = await register_sw();
-  const button = document.querySelector("#send_message");
+  const button = document.querySelector("#send_message_button");
   console.log(button);
   if (button) {
     button.addEventListener("click", (event) => {
