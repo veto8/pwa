@@ -108,6 +108,7 @@ async function message(event) {
   client.postMessage({ msg: response });
 }
 
+let db;
 async function initDB() {
   console.log("...start slqite3");
   self.sqlite3InitModule().then((sqlite3) => {

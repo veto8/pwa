@@ -66,3 +66,31 @@ const register_sw = async () => {
     }
   }
 };
+
+function isRunningStandalone() {
+  return (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    ("standalone" in window.navigator && window.navigator.standalone)
+  );
+}
+
+function safari() {
+  if (!isRunningStandalone()) {
+    const prompt = document.createElement("div");
+    prompt.innerHTML = `
+    <p>Add this app to your home screen for easy access!</p>
+    <p>Tap the Share button <img src="share_icon.png" alt="Share Icon" width="20"> and then select "Add to Home Screen".</p>
+  `;
+    prompt.style.cssText = `
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensure it's on top */
+  `;
+    document.body.appendChild(prompt);
+  }
+}
