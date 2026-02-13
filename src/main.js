@@ -1,3 +1,12 @@
+import { createApp } from "vue";
+import "@picocss/pico/css/pico.css";
+import App from "./App.vue";
+//import './registerServiceWorker'
+
+const app = createApp(App);
+
+app.mount("#app");
+
 let install_prompt = null;
 let $install_button = document.querySelector(".install_app");
 
