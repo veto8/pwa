@@ -1,17 +1,28 @@
-<script setup></script>
 
+<!-- App.vue -->
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.or\
-g</a> to read the
-    documentation
-  </p>
+  <div id="app">
+    <Header />
+    <main class="container">
+      <router-view />
+    </main>
+  </div>
 </template>
 
-<style scoped></style>
+<script>
+import Header from './Header.vue'
+
+export default {
+  components: { Header }
+}
+</script>
+
 <style>
-/* Ensure no scoped styles are overriding here */
+/* Global body padding fix */
+body {
+  padding-top: 70px;
+}
 </style>
+
 
 
