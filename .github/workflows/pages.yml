@@ -27,6 +27,7 @@ jobs:
          sudo apt-get install npm -y
          npm install 
          npm run build
+         ls dist
         #  npm install
         #  npm run dist
       #- name: Setup Pages
