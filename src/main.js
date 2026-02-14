@@ -11,16 +11,17 @@ let install_prompt = null;
 let $install_pwa = document.querySelector("#install_pwa");
 let $refresh_pwa = document.querySelector("#refresh_pwa");
 
-let worker = new Worker(new URL("./db.js", import.meta.url), {
+let worker = new Worker(new URL("./db_worker.js", import.meta.url), {
   type: "module",
 });
 
+/*
 $refresh_pwa.addEventListener("click", () => {
   worker.unregister().then((boolean) => {
     window.location.reload(true);
   });
 });
-
+*/
 const $iniciarBaseDeDatos = document.querySelector("#btnIniciarBaseDeDatos"),
   $insertar = document.querySelector("#btnInsertar"),
   $obtener = document.querySelector("#btnObtener"),
@@ -79,7 +80,7 @@ window.addEventListener("beforeinstallprompt", (event) => {
         console.log("User dismissed the A2HS install app prompt");
       }
       install_prompt = null;
-      $install_button.classList.add("is-hidden");
+      $install_pwa.classList.add("is-hidden");
     });
   });
 });
