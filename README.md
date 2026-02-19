@@ -1,6 +1,12 @@
-# SQLite3 with OPFS and JavaScript
+## PWA Example
 
-SQLite3 on the web with pure JavaScript
-Test PWA add to Desktop 
+* SQLite3 Datbase with JavaScript on a Webworker
+* Service Worker to sync content
+* Can add the PWA to the Desktop 
 
-inspired from: git@github.com:veto8/hola-sqlite3.git
+## Demo Site
+* https://pwa.myridia.com
+
+## Credits
+* https://github.com:veto8/hola-sqlite3
+
