@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import { fileURLToPath, URL } from "node:url";
 import vue from "@vitejs/plugin-vue";
 import vueDevTools from "vite-plugin-vue-devtools";
-
 import path from "path";
+import { resolve } from "path";
 
 export default defineConfig({
   base: "./",
@@ -16,7 +16,12 @@ export default defineConfig({
   },
   build: {
     outDir: "../dist",
-    emptyOutDir: true, // also necessary
+    emptyOutDir: true,
+    rollupOptions: {
+      main: resolve(__dirname, "index.html"),
+      contact: resolve(__dirname, "contact.html"),
+      about: resolve(__dirname, "about.html"),
+    },
   },
   server: {
     headers: {
