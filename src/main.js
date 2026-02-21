@@ -8,6 +8,7 @@ import "./css/app.css";
 import "./js/app.js";
 const log = new Log2textarea("logger");
 const app = createApp(App);
+app.use(router);
 app.mount("#app");
 
 let install_prompt = null;
