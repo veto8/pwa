@@ -13,18 +13,54 @@
 </head>
 <body>
   <div id="app"></div>
+  <div style="border:dashed 1px white;padding:5px;margin:10px">
+  <h5>Install the App to to your Desktop</h5>
+  <p>
   <button id="install_pwa">Install PWA</button>
   <button id="refresh_pwa">Refresh PWA</button>  
-  <br>
-  <br>  
+  </p>
+  </div>
+  <div style="border:dashed 1px white;padding:5px;margin:10px">  
+    <h5>Test a Sqlite3 Database</h5>
+    <p>
   <button id="btnIniciarBaseDeDatos">Start Database</button>
   <button disabled id="btnInsertar">Insert Person</button>
   <button disabled id="btnObtener">List Persons</button>  
   <input disabled value="Parzibyte" id="nombre" type="text" placeholder="Nombre">
   <input disabled value="2050-01-01" id="fechaNacimiento" type="date">
   <div id="contenedorPersonas"></div>
-  <textarea id="logger" name="log" aria-label="Message"></textarea>
-  <script type="module" src="/main.js"></script>  
+    </p>
+  </div>
+
+  <div style="border:dashed 1px white;padding:5px;margin:10px">
+    <h5>Logging:</h5>    
+    <textarea id="logger" name="log" aria-label="Message" style="height:300px;font-size: 10px"></textarea>
+  </div>
+
+
+
+        <footer>
+            <small>
+                <strong>Quick Links:</strong>
+                <a href="https://myridia.com">Myridia Company</a> |
+                <a href="https://myridia.com/welcome/privacy">Privacy</a> |
+                <a href="https://myridia.com/welcome/contact_us">Contact</a>
+            </small>
+            <hr>
+            <small>
+                &copy; <em id="thisyear"></em>Myridia.com Company | 
+                Styled with <a href="https://picocss.com/">Pico CSS</a>
+            </small>
+        </footer>
+
+  
+	<script type="module" src="/main.js"></script>
+	<script>
+
+          let year = document.querySelector("#thisyear");
+          year.innerHTML = new Date().getFullYear() + " ";
+
+	</script>
 </body>
 </html>
 
