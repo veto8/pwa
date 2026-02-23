@@ -18,6 +18,7 @@ This repository demonstrates the power of Progressive Web Applications by combin
 - **Status:** Active (last updated February 20, 2026)
 - **Visibility:** Public
 - **Repository:** https://github.com/myridia/pwa
+- **Demo:** https://pwa.myridia.com
 
 ### 🚀 **Get Started**
 
