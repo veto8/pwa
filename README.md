@@ -1,4 +1,4 @@
-# ![myridia/pwa](public/img/logo.png) Progressive Web App Demo
+# ![myridia/pwa](src/public/img/logo.png) Progressive Web App Demo
 
 Welcome to **myridia/pwa**, a comprehensive Progressive Web App (PWA) starter project that showcases modern web technologies in action!
 
